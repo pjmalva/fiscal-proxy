@@ -136,7 +136,7 @@ class IBPTService
         return $message;
     }
 
-    public function getGtin(String $barcode)
+    public function getGtin(?String $barcode = NULL)
     {
         $gtinSizes = [8, 12, 13, 14];
         if(
