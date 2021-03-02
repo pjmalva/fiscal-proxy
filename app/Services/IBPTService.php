@@ -61,10 +61,14 @@ class IBPTService
         );
 
         return [
-            "country" => $resp->ValorTributoNacional,
-            "state" => $resp->ValorTributoEstadual,
-            "city" => $resp->ValorTributoMunicipal,
-            "import" => $resp->ValorTributoImportado,
+            "country_percent" => $resp->Nacional,
+            "state_percent" => $resp->Estadual,
+            "city_percent" => $resp->Municipal,
+            "import_percent" => $resp->Importado,
+            "country" => $resp->Nacional * $this->value,
+            "state" => $resp->Estadual * $this->value,
+            "city" => $resp->Municipal * $this->value,
+            "import" => $resp->Importado * $this->value,
         ];
     }
 
