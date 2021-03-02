@@ -13,5 +13,9 @@
 |
 */
 
+$router->get('/', function() {
+    return "Hello, this is the FISCAL PROXY";
+});
+
 $router->get('/proxy/ibpt/taxes', 'API\IBPTController@calculateProductTaxes');
 $router->post('/proxy/ibpt/message', 'API\IBPTController@prepareMessageIBPT');
