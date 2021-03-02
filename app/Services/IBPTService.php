@@ -138,7 +138,7 @@ class IBPTService
         if(
             !$barcode
             || $barcode == ''
-            || !in_array(count($barcode), $gtinSizes)
+            || !in_array(strlen($barcode), $gtinSizes)
         ) {
             return 'SEM GTIN';
         }
