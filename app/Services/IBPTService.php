@@ -69,13 +69,6 @@ class IBPTService
             "state" => (float) $resp->ValorTributoEstadual,
             "city" => (float) $resp->ValorTributoMunicipal,
             "import" => (float) $resp->ValorTributoImportado,
-
-            "calc_country_1" => ($resp->Nacional / 100),
-
-            "calc_country" => ($resp->Nacional / 100) * $this->value,
-            "calc_state" => ($resp->Estadual / 100) * $this->value,
-            "calc_city" => ($resp->Municipal / 100) * $this->value,
-            "calc_import" => ($resp->Importado / 100) * $this->value,
         ];
     }
 
