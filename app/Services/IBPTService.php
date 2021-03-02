@@ -78,7 +78,7 @@ class IBPTService
         String $unity,
         float $value,
         ?String $gtin = NULL,
-        ?String $reference = NULL
+        $reference = NULL
     ) {
         $service = new IBPTService(
             $token,
