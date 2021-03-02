@@ -65,11 +65,14 @@ class IBPTService
             "state_percent" => $resp->Estadual,
             "city_percent" => $resp->Municipal,
             "import_percent" => $resp->Importado,
-            "country" => ($resp->Nacional / 100) * $this->value,
-            "state" => ($resp->Estadual / 100) * $this->value,
-            "city" => ($resp->Municipal / 100) * $this->value,
-            "import" => ($resp->Importado / 100) * $this->value,
-
+            "country" => $resp->ValorTributoNacional,
+            "state" => $resp->ValorTributoEstadual,
+            "city" => $resp->ValorTributoMunicipal,
+            "import" => $resp->ValorTributoImportado,
+            // "country" => ($resp->Nacional / 100) * $this->value,
+            // "state" => ($resp->Estadual / 100) * $this->value,
+            // "city" => ($resp->Municipal / 100) * $this->value,
+            // "import" => ($resp->Importado / 100) * $this->value,
         ];
     }
 
