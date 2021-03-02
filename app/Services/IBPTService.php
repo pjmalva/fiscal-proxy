@@ -30,8 +30,8 @@ class IBPTService
         String $name,
         String $unity,
         float $value,
-        String $gtin,
-        String $reference
+        ?String $gtin = NULL,
+        ?String $reference = NULL
     ) {
         $this->token = $token;
         $this->cnpj = $cnpj;
@@ -78,7 +78,7 @@ class IBPTService
         String $unity,
         float $value,
         ?String $gtin = NULL,
-        $reference = NULL
+        ?String $reference = NULL
     ) {
         $service = new IBPTService(
             $token,
