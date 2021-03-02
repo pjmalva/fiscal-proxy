@@ -69,6 +69,7 @@ class IBPTService
             "state" => ($resp->Estadual / 100) * $this->value,
             "city" => ($resp->Municipal / 100) * $this->value,
             "import" => ($resp->Importado / 100) * $this->value,
+
         ];
     }
 
