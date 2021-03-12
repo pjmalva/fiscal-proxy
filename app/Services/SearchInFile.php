@@ -8,7 +8,7 @@ class SearchInFile
 
     public function __construct(string $fileName, string $extension="csv")
     {
-        $this->fileName = storage_path("app\\consult\\$fileName.$extension");
+        $this->fileName = storage_path("app/consult/$fileName.$extension");
     }
 
     public function find($search, $count=10)
