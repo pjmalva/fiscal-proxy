@@ -1,2 +1,4 @@
 *
+!consult
+!consult/*.csv
 !.gitignore

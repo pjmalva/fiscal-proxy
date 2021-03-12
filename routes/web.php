@@ -19,3 +19,7 @@ $router->get('/', function() {
 
 $router->get('/proxy/ibpt/taxes', 'API\IBPTController@calculateProductTaxes');
 $router->post('/proxy/ibpt/message', 'API\IBPTController@prepareMessageIBPT');
+
+
+$router->get('/proxy/ncm/consult', 'API\NCMController@search');
+$router->get('/proxy/cfop/consult', 'API\CFOPController@search');
